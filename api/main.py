@@ -35,7 +35,7 @@ class MaterialRequest(BaseModel):
 
 import numpy as np
 import pandas as pd
-from fastapi import HTTPException
+from fastapi import FastAPI, HTTPException
 from sklearn.ensemble import RandomForestClassifier
 
 def recommend_substitute(material: str, eis_score: float):
@@ -74,18 +74,13 @@ def recommend_substitute(material: str, eis_score: float):
         'Recommended Substitute': substitute
     }
 
-# Modify the GET endpoint to only accept 'material' as a query parameter.
 @app.get("/recommend")
-def recommend(material: Optional[str] = None):
-    if not material:
-        raise HTTPException(status_code=400, detail="Please provide the material.")
-    
-    # Provide a default EISc score or handle it separately if needed for a GET request
-    default_eis_score = 1.0  # Set a default or fetch dynamically if needed
-    result = recommend_substitute(material, default_eis_score)
+def recommend(material: Optional[str] = None, eis_score: Optional[float] = None):
+    if not material or eis_score is None:
+        raise HTTPException(status_code=400, detail="Please provide both material and EISc score.")
+    result = recommend_substitute(material, eis_score)
     return result
 
-# POST endpoint to take both 'material' and 'eis_score' in the request body.
 @app.post("/recommend")
 def recommend_post(request: MaterialRequest):
     result = recommend_substitute(request.material, request.eis_score)
