@@ -1,1 +1,34 @@
-Common Material,EISc(original),Sustainable Substitute,EIS (Substitute)PET (Polyethylene Terephthalate),8,PLA (Polylactic Acid) Bioplastic,3Polyethylene (Plastic),9,Jute or Cotton,2Polystyrene (Plastic),9,(Plastic),3,,Bamboo or Compostable PLA,Polyurethane Foam,8,Recycled Denim or Sheep?s Wool,3Plastic,10,Paper or Metal,2Conventional Cotton,7,Organic Cotton or Hemp,3Polystyrene (Styrofoam),9,Mushroom Packaging (Mycelium),1PVC (Vinyl),8,Recycled Wood or Bamboo,3Non-Woven Polyester,8,Biodegradable Bamboo Fiber,2
+Common Material,EISc(original),Sustainable Substitute,EIS (Substitute)
+PET ,8,PLA Bioplastic,3
+Polyethylene (Plastic),9,Jute or Cotton,2
+Polystyrene (Plastic),9,Bamboo or Compostable PLA,3
+,,,
+Polyurethane Foam,8,Recycled Denim or Sheeps Wool,3
+Plastic,10,Paper or Metal,2
+Conventional Cotton,7,Organic Cotton or Hemp,3
+Polystyrene (Styrofoam),9,Mushroom Packaging (Mycelium),1
+PVC ,8,Recycled Wood or Bamboo,3
+Non-Woven Polyester,8,Biodegradable Bamboo Fiber,2
+Vinyl,8,Recycled Wood or Bamboo,3
+Polyethylene Terephthalate,8, Polylactic Acid,3
+Nylon,7,Organic Cotton or Recycled Nylon,3
+Polylactic Acid,5,Biodegradable Paper,2
+PLA,5,Biodegradable Paper,2
+Polycarbonate,9,Glass or Tritan Copolyester,4
+PETG,7,PLA-based materials,3
+Polyethylene Terephthalate Glycol,7,PLA-based materials,3
+Polyester Fabric,7,Tencel or Modal,2
+Polyurethane Foam,9,Natural Latex or Coconut Fiber,3
+Epoxy Resin,9,Bio-based Resin,3
+Teflon,10,Ceramic Coating or Cast Iron,4
+ABS,8,Recycled ABS or Wood-based Composites,3
+Melamine,8,Bamboo-based Tableware,3
+Bakelite,9,Wood-based Composites,4
+Synthetic Leather,9,Vegan Leather,3
+Synthetic Wax,8,Beeswax or Soy Wax,3
+Plastic Cutlery,9,Bamboo Cutlery,2
+Disposable Plates,9,Palm Leaf or Areca Leaf Plates,2
+Acrylic Paint,7,Natural Pigments or Water-based Paints,2
+PET Film,7,Cellulose-based Film,3
+Silicone Rubber,6,Natural Latex or Biodegradable Silicone,3
+Microfiber,8,Hemp or Bamboo Fibers,3
