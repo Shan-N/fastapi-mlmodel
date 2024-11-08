@@ -1,26 +1,40 @@
 import os
 import pandas as pd
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
 
-# Path to the CSV file (adjusted for Render deployment)
+app = FastAPI()
+
+# CORS Middleware setup
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Update with specific origins if needed
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Path to the CSV file
 csv_path = os.path.join(os.getcwd(), 'data', 'data.csv')
 
-# Try loading the CSV file
+# Load the CSV file
 try:
     data = pd.read_csv(csv_path)
+    data.dropna(inplace=True)
+    data['Common Material'] = data['Common Material'].str.lower().str.strip()
+    data['Sustainable Substitute'] = data['Sustainable Substitute'].str.lower().str.strip()
+    print("CSV file loaded successfully.")
 except FileNotFoundError:
     data = pd.DataFrame(columns=["Common Material", "Sustainable Substitute", "EISc(original)", "EIS (Substitute)"])
-    print(f"CSV file not found at {csv_path}, created an empty DataFrame.")
-
-# Clean and preprocess the data
-data.dropna(inplace=True)
-data['Common Material'] = data['Common Material'].str.lower().str.strip()
-data['Sustainable Substitute'] = data['Sustainable Substitute'].str.lower().str.strip()
+    print(f"CSV file not found at {csv_path}. Created an empty DataFrame.")
 
 # Recommendation function
 def recommend_substitute(material: str):
+    if data.empty:
+        raise HTTPException(status_code=500, detail="Data is not available. Please check the data source.")
+    
     material = material.lower().strip()
     substitute_row = data[data['Common Material'] == material]
     
@@ -37,9 +51,6 @@ def recommend_substitute(material: str):
         }
     else:
         raise HTTPException(status_code=404, detail="No recommendation found for this material.")
-
-# Initialize FastAPI app
-app = FastAPI()
 
 # Define request model for POST requests
 class MaterialRequest(BaseModel):
