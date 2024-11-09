@@ -31,16 +31,21 @@ except FileNotFoundError:
 
 class MaterialRequest(BaseModel):
     material: str
-    eis_score: float
+    eis_score: Optional[float] = None
 
 import numpy as np
 import pandas as pd
-from fastapi import FastAPI, HTTPException
 from sklearn.ensemble import RandomForestClassifier
 
-def recommend_substitute(material: str, eis_score: float):
+# Default EIS score to use if none is provided
+DEFAULT_EIS_SCORE = 0.5
+
+def recommend_substitute(material: str, eis_score: Optional[float] = None):
     if model is None or material_encoder is None or substitute_encoder is None:
         raise HTTPException(status_code=500, detail="Model or encoders are not available.")
+
+    # Use the provided eis_score or default if None
+    eis_score = eis_score if eis_score is not None else DEFAULT_EIS_SCORE
 
     # Preprocess the input material using the material encoder
     try:
@@ -50,19 +55,17 @@ def recommend_substitute(material: str, eis_score: float):
     
     # Ensure material_encoded is a dense array (if it's sparse)
     if isinstance(material_encoded, np.ndarray):
-        # It might already be a dense array
         material_encoded_dense = material_encoded
     else:
-        # If it's sparse, convert it to dense
         material_encoded_dense = material_encoded.toarray()
 
     # Prepare the features for prediction
-    features = np.hstack([material_encoded_dense, np.array([[eis_score]])])  # Ensure it's a 2D array for sklearn
+    features = np.hstack([material_encoded_dense, np.array([[eis_score]])])
 
     # Convert to float if needed
     features = features.astype(float)
 
-    # Make prediction (the model expects features as a NumPy array without column names)
+    # Make prediction
     substitute_encoded = model.predict(features)[0]
     
     # Convert the predicted substitute back to its original form using the substitute encoder
@@ -75,10 +78,10 @@ def recommend_substitute(material: str, eis_score: float):
     }
 
 @app.get("/recommend")
-def recommend(material: Optional[str] = None, eis_score: Optional[float] = None):
-    if not material or eis_score is None:
-        raise HTTPException(status_code=400, detail="Please provide both material and EISc score.")
-    result = recommend_substitute(material, eis_score)
+def recommend(material: Optional[str] = None):
+    if not material:
+        raise HTTPException(status_code=400, detail="Please provide the material.")
+    result = recommend_substitute(material)
     return result
 
 @app.post("/recommend")
