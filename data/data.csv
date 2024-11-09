@@ -1,16 +1,15 @@
 Common Material,EISc(original),Sustainable Substitute,EIS (Substitute)
-PET ,8,PLA Bioplastic,3
+PET,8,PLA Bioplastic,3
 Polyethylene (Plastic),9,Jute or Cotton,2
 Polystyrene (Plastic),9,Bamboo or Compostable PLA,3
-,,,
 Polyurethane Foam,8,Recycled Denim or Sheeps Wool,3
 Plastic,10,Paper or Metal,2
 Conventional Cotton,7,Organic Cotton or Hemp,3
 Polystyrene (Styrofoam),9,Mushroom Packaging (Mycelium),1
-PVC ,8,Recycled Wood or Bamboo,3
+PVC,8,Recycled Wood or Bamboo,3
 Non-Woven Polyester,8,Biodegradable Bamboo Fiber,2
 Vinyl,8,Recycled Wood or Bamboo,3
-Polyethylene Terephthalate,8, Polylactic Acid,3
+Polyethylene Terephthalate,8,Polylactic Acid,3
 Nylon,7,Organic Cotton or Recycled Nylon,3
 Polylactic Acid,5,Biodegradable Paper,2
 PLA,5,Biodegradable Paper,2
@@ -98,3 +97,340 @@ PVB,8,Recycled Glass or Biodegradable PVB,3
 Nylon 66,8,Biodegradable Polymers,3
 Polysulfone,8,Bio-based PSU or Recycled Polysulfone,3
 Isocyanates,10,Natural Polyols or Bio-based Polyurethanes,4
+Polyurethane,8,Biodegradable Polyurethane,3
+Silicone,9,Plant-based Silicone,4
+Acrylic,8,Bamboo or Glass,3
+Polyethylene Foam,8,Recycled Foam,3
+Polyester Film,7,Cornstarch-based Film,2
+Polyvinyl Alcohol,8,Biodegradable PVA,3
+Polytetrafluoroethylene,10,Ceramic Coating,4
+Polypropylene Rope,8,Bamboo or Hemp Rope,3
+Fiberglass,9,Bamboo or Hemp Composites,3
+Aluminum,8,Recycled Aluminum,2
+PVC Foam,8,Recycled Plastic Foam,3
+High-Density Polyethylene,8,Biodegradable HDPE,3
+Plastic Bags,9,Reusable Cloth Bags,2
+Thermoplastic Elastomers,8,Biodegradable Elastomers,3
+Glass Wool,8,Cellulose Insulation,3
+Thermoplastic Polyurethane,8,Biodegradable TPU,3
+Polylactic Acid (PLA),6,Compostable PLA,2
+Expanded Polystyrene,9,Compostable Paper Foam,3
+Expanded Polypropylene,8,Recycled Polypropylene,3
+Polybutylene Terephthalate,8,Biodegradable PBT,3
+Polyvinyl Chloride Flooring,9,Cork or Bamboo Flooring,3
+Mica,8,Recycled Glass,3
+Polyamide 6,7,Biodegradable Polyamide,3
+Polycarbonate Panels,9,Recycled Polycarbonate,3
+Melamine Foam,9,Recycled Melamine,3
+Acetal,8,Recycled Acetal,3
+Polyphenylene Oxide,8,Bio-based Polyphenylene Oxide,3
+Polymethyl Methacrylate (PMMA),9,Recycled PMMA,3
+Polyimide,8,Biodegradable Polyimide,3
+Polyethylene Glycol,8,Bio-based PEG,3
+Polyurethane Coating,8,Plant-based Coating,3
+Polyacrylate,8,Biodegradable Polyacrylate,3
+Polyvinyl Acetate Emulsion,8,Starch-based Adhesive,3
+Terephthalic Acid,8,Recycled PET,3
+Laminated Wood,8,Recycled Wood,3
+Recycled Paper,7,Recycled Paper or Plant-based Paper,2
+Recycled Cotton,7,Biodegradable Cotton,2
+Recycled Steel,8,Recycled Steel,2
+Recycled Glass,9,Recycled Glass or Bio-based Glass,3
+Recycled Copper,8,Recycled Copper or Plant-based Copper,3
+Recycled Aluminum Foil,8,Reusable Beeswax Wrap,2
+Recycled Polyethylene,8,Recycled Polyethylene or Biodegradable Polyethylene,3
+Recycled Nylon,8,Recycled Nylon or Hemp Fiber,3
+Recycled Polyester,8,Recycled Polyester or Organic Cotton,3
+Recycled Polystyrene,8,Recycled Polystyrene or Bio-based Styrofoam,3
+Recycled PLA,8,Recycled PLA or Bamboo Fiber,3
+Natural Rubber,8,Plant-based Rubber,3
+Plant-based Paint,7,Water-based Paint,2
+Bio-based Polyester,7,Recycled Polyester,2
+Coconut Fiber,8,Bamboo Fiber,3
+Hemp Fiber,8,Jute Fiber,3
+Soy-based Ink,7,Water-based Ink,2
+Recycled Paperboard,7,Recycled Paper or Bamboo Paper,2
+Compostable PLA,7,Plant-based PLA,2
+Compostable Paper,7,Bamboo Paper,2
+Rice Husk,8,Compostable Rice Husk,3
+Corn Starch,8,Biodegradable Cornstarch,3
+Mushroom Leather,8,Mycelium Leather,3
+Recycled Tyre Rubber,9,Recycled Rubber,3
+Beeswax Wrap,8,Reusable Beeswax Wrap,3
+Bamboo Fabric,8,Organic Cotton,3
+Tencel,8,Hemp or Organic Cotton,3
+Cellulose,8,Recycled Cellulose,3
+Cork,8,Recycled Cork,3
+Jute,8,Bamboo Fiber,3
+Wool,7,Cotton or Hemp,3
+Flax,7,Organic Cotton,3
+Silk,8,Synthetic Silk,3
+Algae-Based Bioplastic,7,Plant-based Bioplastics,2
+Palm Leaves,8,Bamboo Leaves,3
+Agar,8,Plant-based Agar,3
+Banana Leaf,8,Compostable Leaf,3
+Coconut Shell,8,Compostable Shell,3
+Papyrus,7,Bamboo Paper,2
+Eucalyptus,8,Recycled Eucalyptus,3
+Seaweed,8,Bio-based Seaweed Packaging,3
+Chitosan,8,Bio-based Chitosan,3
+Hempcrete,7,Bamboo-based Insulation,3
+Cotton,7,Organic Cotton,2
+Flax Fiber,7,Bamboo Fiber,2
+Milk Protein Plastics,8,Plant-based Plastics,3
+Soy Protein Plastics,8,Plant-based Plastics,3
+Bio-polyethylene,8,Biodegradable Polyethylene,3
+Bio-based Polycarbonate,8,Recycled Polycarbonate,3
+Tritan,9,Plant-based Tritan,3
+Polylactic Acid Film,8,Biodegradable Film,3
+Polyhydroxyalkanoates,8,Biodegradable Polyhydroxyalkanoates,3
+Polyamide 11,8,Biodegradable Polyamide,3
+Bamboo Charcoal,8,Recycled Charcoal,3
+Graphene,8,Recycled Graphene,3
+Recycled PETG,8,Recycled Glass,3
+Bamboo Pulp,8,Recycled Pulp,3
+Hemp Paper,8,Recycled Paper,3
+Coconut Oil-based Bioplastic,8,Compostable Plastic,3
+Recycled Carbon Fiber,8,Recycled Carbon Fiber Composites,3
+Thermoplastic Vulcanizates,8,Biodegradable Thermoplastic,3
+Recycled Leather,9,Vegan Leather,3
+Cotton Waste,8,Hemp or Organic Cotton,3
+Recycled Wool,8,Recycled Wool Insulation,3
+Sisal,8,Hemp or Bamboo Fiber,3
+Linseed Oil,7,Water-based Linseed Oil,3
+Soybean Oil,8,Bio-based Oil,3
+Algae Oil,8,Plant-based Oil,3
+Rapeseed Oil,8,Vegetable-based Oil,3
+Grape Seed Oil,8,Plant-based Oil,3
+Sunflower Oil,8,Plant-based Oil,3
+Palm Oil,8,Certified Sustainable Palm Oil,3
+Recycled Textiles,8,Organic Textiles,3
+Natural Stone,7,Recycled Stone,3
+Recycled Granite,8,Recycled Granite or Recycled Glass,3
+Treated Wood,8,Recycled Wood,3
+Glass Containers,8,Recycled Glass,3
+Recycled Aluminum Cans,8,Recycled Aluminum,3
+Wooden Furniture,8,Bamboo Furniture,3
+Leather,9,Plant-based Leather,3
+Recycled Paper Bags,7,Compostable Paper Bags,3
+Recycled Glass Bottles,8,Glass or Biodegradable Bottles,3
+Paper Packaging,8,Biodegradable Paper Packaging,3
+Compostable Utensils,8,Bamboo or Palm Leaf Utensils,3
+Recycled Cardboard,7,Recycled Paperboard,3
+Biodegradable Paint,7,Natural Paints,2
+Corn Plastic,7,Compostable Corn Plastic,2
+Polyvinyl Butyral,8,Biodegradable PVB,3
+FSC-Certified Wood,8,Sustainable Wood,3
+Cork Packaging,8,Bamboo Packaging,3
+Recycled Paper Straws,8,Compostable Paper Straws,3
+Recycled Steel,8,Recycled Steel or Aluminum,3
+Recycled Plastic,9,Plant-based Plastic,3
+Polyester Resin, 8, Bio-based Resin, 3
+Polybutene, 8, Bio-based Polybutene, 3
+Polyisoprene, 8, Natural Rubber, 3
+Ethylene Vinyl Acetate (EVA), 8, Recycled EVA, 3
+Thermoplastic Polyolefin (TPO), 8, Biodegradable TPO, 3
+Thermoplastic Elastomer (TPE), 8, Biodegradable TPE, 3
+Polyethylene Glycol (PEG), 8, Bio-based PEG, 3
+Polyvinyl Alcohol (PVA), 8, Biodegradable PVA, 3
+Epoxidized Soybean Oil (ESBO), 8, Bio-based Epoxidized Soybean Oil, 3
+Recycled Polyethylene Terephthalate (rPET), 8, Bio-based PET, 3
+Polyhydroxybutyrate (PHB), 8, Biodegradable PHB, 3
+Polyvinyl Chloride (PVC), 8, Recycled PVC, 3
+Polyurethane (PU), 8, Biodegradable PU, 3
+Acetate, 8, Bio-based Acetate, 3
+Polyamide 12, 8, Biodegradable Polyamide 12, 3
+Ethylene Propylene Diene Monomer (EPDM), 8, Bio-based EPDM, 3
+Polymethyl Methacrylate (PMMA), 9, Recycled PMMA, 3
+Polypropylene Glycol (PPG), 8, Biodegradable PPG, 3
+Polybenzoxazine, 8, Bio-based Polybenzoxazine, 3
+Phenolic Resin, 8, Bio-based Phenolic Resin, 3
+Polyolefin Elastomer (POE), 8, Biodegradable POE, 3
+Polysiloxane, 8, Plant-based Siloxane, 3
+Silicone Rubber, 6, Natural Latex or Biodegradable Silicone, 3
+Polyurethane Coating, 8, Plant-based Coating, 3
+Nitrile Rubber, 8, Natural Rubber, 3
+Polyisocyanurate, 8, Bio-based Polyisocyanurate, 3
+Recycled Polystyrene, 8, Recycled Polystyrene or Bio-based Styrofoam, 3
+Polyethylene Foam, 8, Recycled Foam, 3
+Polypropylene, 8, Glass, 3
+Polyethylene Bags, 9, Compostable Cornstarch Bags, 2
+Natural Stone, 7, Recycled Stone, 3
+Bamboo Pulp, 8, Recycled Pulp, 3
+Hemp Paper, 8, Recycled Paper, 3
+Coconut Oil-based Bioplastic, 8, Compostable Plastic, 3
+Recycled Carbon Fiber, 8, Recycled Carbon Fiber Composites, 3
+Thermoplastic Vulcanizates, 8, Biodegradable Thermoplastic, 3
+Recycled Leather, 9, Vegan Leather, 3
+Recycled Wool, 8, Recycled Wool Insulation, 3
+Sisal, 8, Hemp or Bamboo Fiber, 3
+Linseed Oil, 7, Water-based Linseed Oil, 3
+Soybean Oil, 8, Bio-based Oil, 3
+Algae Oil, 8, Plant-based Oil, 3
+Rapeseed Oil, 8, Vegetable-based Oil, 3
+Grape Seed Oil, 8, Plant-based Oil, 3
+Sunflower Oil, 8, Plant-based Oil, 3
+Palm Oil, 8, Certified Sustainable Palm Oil, 3
+Recycled Textiles, 8, Organic Textiles, 3
+Recycled Granite, 8, Recycled Granite or Recycled Glass, 3
+Recycled Stone, 8, Recycled Stone, 3
+Treated Wood, 8, Recycled Wood, 3
+Glass Containers, 8, Recycled Glass, 3
+Recycled Aluminum Cans, 8, Recycled Aluminum, 3
+Wooden Furniture, 8, Bamboo Furniture, 3
+Leather, 9, Plant-based Leather, 3
+Recycled Paper Bags, 7, Compostable Paper Bags, 3
+Recycled Glass Bottles, 8, Glass or Biodegradable Bottles, 3
+Paper Packaging, 8, Biodegradable Paper Packaging, 3
+Compostable Utensils, 8, Bamboo or Palm Leaf Utensils, 3
+Recycled Cardboard, 7, Recycled Paperboard, 3
+Biodegradable Paint, 7, Natural Paints, 2
+Corn Plastic, 7, Compostable Corn Plastic, 2
+Polyvinyl Butyral, 8, Biodegradable PVB, 3
+FSC-Certified Wood, 8, Sustainable Wood, 3
+Cork Packaging, 8, Bamboo Packaging, 3
+Recycled Paper Straws, 8, Compostable Paper Straws, 3
+Recycled Steel, 8, Recycled Steel or Aluminum, 3
+Recycled Plastic, 9, Plant-based Plastic, 3
+Bamboo Paper, 8, Recycled Paper, 3
+Biodegradable Bamboo, 8, Recycled Bamboo, 3
+Bio-based Bioplastic, 8, Plant-based Bioplastics, 3
+Hemp Paper, 8, Recycled Paper, 3
+Natural Fiberboard, 8, Recycled Wood Fiberboard, 3
+Recycled Fabric, 8, Organic Fabric, 3
+Coconut Fiber, 8, Bamboo Fiber, 3
+Hemp Fiber, 8, Jute Fiber, 3
+Recycled Rubber, 9, Recycled Rubber, 3
+Recycled Steel, 8, Recycled Steel, 3
+Plant-based Resin, 8, Bio-based Resin, 3
+Natural Fiber, 7, Biodegradable Fiber, 2
+Zein (Corn Protein),7,Plant-based Protein Films,2
+Bacterial Cellulose,6,Microbial Cellulose Films,2
+Spider Silk Protein,8,Recombinant Protein Fibers,3
+Cactus Leather,7,Desert Plant Leather,2
+Pineapple Leaf Fiber,6,Piñatex,2
+Coffee Ground Composites,5,Recycled Coffee Biocomposites,2
+Olive Pit Composites,6,Fruit Waste Composites,2
+Fish Scale Plastics,8,Algae-based Plastics,3
+Eggshell Composites,6,Calcium Carbonate Composites,2
+Rice Husk Ash Cement,8,Agricultural Waste Cement,3
+Casein Plastics,7,Plant Protein Plastics,2
+Lotus Fiber,6,Aquatic Plant Fiber,2
+Kapok Fiber,5,Tree Fiber Insulation,2
+Ramie Fiber,6,Nettle Plant Fiber,2
+Abaca Fiber,7,Banana Plant Fiber,3
+Eucalyptus Pulp Fabric,6,Fast-growing Tree Fiber,2
+Kenaf Fiber,6,Hibiscus Plant Fiber,2
+Nettle Fiber,5,Wild Plant Fiber,2
+Water Hyacinth Fiber,6,Invasive Plant Fiber,2
+Bagasse Composites,5,Sugarcane Waste Materials,2
+Cork Leather,7,Tree Bark Leather,3
+Apple Leather,6,Fruit Waste Leather,2
+Grape Leather,6,Wine Industry Byproduct Leather,2
+Teak Wood,9,Bamboo Composites,3
+Mahogany,9,Fast-growing Hardwood,3
+Cedar,8,Reclaimed Wood,3
+Rosewood,9,Sustainable Plantation Wood,3
+Shellac,7,Plant-based Resin,2
+Carbon Fiber,10,Natural Fiber Composites,4
+Kevlar,9,High-strength Natural Fibers,4
+Fiberglass Mat,8,Natural Fiber Mat,3
+Mineral Wool,8,Recycled Cotton Insulation,3
+Rock Wool,8,Hemp Wool Insulation,3
+Asbestos (Historical),10,Cellulose Fiber,2
+Lead Paint,10,Natural Mineral Paint,2
+Mercury Thermometers,10,Digital or Gallium-based,2
+Cadmium Pigments,10,Natural Earth Pigments,2
+Chromated Copper Arsenate,10,Heat-treated Wood,3
+Creosote,9,Natural Wood Preservatives,3
+Pentachlorophenol,10,Organic Wood Treatment,3
+Antimony Compounds,9,Natural Flame Retardants,3
+PCB Capacitors,10,Bio-based Capacitors,4
+Halogenated Flame Retardants,9,Mineral-based Flame Retardants,3
+Phthalate Plasticizers,9,Citrate-based Plasticizers,3
+Alkylphenols,9,Natural Surfactants,3
+Perfluorocarbons,10,Silicon-based Alternatives,4
+Brominated Flame Retardants,9,Phosphate-based Retardants,3
+Hexavalent Chromium,10,Trivalent Chromium,4
+Arsenic Compounds,10,Natural Preservatives,3
+Beryllium,10,Aluminum Alloys,4
+Mercury Compounds,10,Electronic Sensors,3
+Cadmium Batteries,10,Lithium-ion Batteries,4
+Lead Solder,9,Lead-free Solder,3
+Radioactive Materials,10,Non-radioactive Alternatives,4
+Volatile Organic Compounds,9,Water-based Solutions,3
+Methyl Bromide,10,Steam Treatment,2
+Ozone-depleting Substances,10,Natural Refrigerants,3
+Benzene,10,Natural Solvents,3
+Asbestos Cement,10,Fiber-reinforced Cement,3
+Lead Pipes,10,PEX or Copper Pipes,3
+PCB Transformers,10,Dry-type Transformers,4
+Mercury Switches,10,Electronic Switches,3
+Leaded Gasoline,10,Electric Vehicles,2
+Coal Tar,9,Bio-based Tar,3
+Creosote-treated Wood,9,Heat-treated Wood,3
+DDT (Historical),10,Natural Pesticides,2
+Chlordane,10,Biological Controls,2
+Lindane,10,Natural Insecticides,2
+Mirex,10,Organic Pest Control,2
+Toxaphene,10,Botanical Pesticides,2
+Dieldrin,10,Natural Deterrents,2
+Heptachlor,10,Plant-based Pesticides,2
+Chlorofluorocarbons,10,Natural Refrigerants,3
+Hydrochlorofluorocarbons,9,CO2 Refrigeration,3
+Carbon Tetrachloride,10,Water-based Cleaning,2
+Methyl Chloroform,9,Citrus-based Solvents,2
+Halon Fire Suppressants,9,Water Mist Systems,3
+Methylene Chloride Paint Strippers,9,Soy-based Strippers,3
+Perchloroethylene,9,CO2 Cleaning,3
+Trichloroethylene,9,Aqueous Cleaners,3
+Chromic Acid,9,Citric Acid,2
+Phenol,9,Natural Phenolics,3
+Formaldehyde Resins,8,Natural Adhesives,2
+Vinyl Chloride Monomer,9,Bio-based Monomers,3
+Styrene Monomer,8,Natural Monomers,3
+Acrylonitrile,9,Bio-based Nitriles,3
+Epichlorohydrin,9,Bio-based Epoxy,3
+Bisphenol-A,9,Plant-based Phenols,3
+Phosgene,10,Green Chemistry Routes,4
+Hydrazine,9,Natural Reducing Agents,3
+Methyl Isocyanate,10,Non-isocyanate Chemistry,4
+Dimethylformamide,9,Bio-based Solvents,3
+Hexamethylenediamine,8,Bio-based Diamines,3
+Acrylamide,9,Natural Polymers,3
+Ethylene Oxide,9,Natural Sterilization,3
+Propylene Oxide,9,Enzymatic Processes,3
+Vinyl Acetate,8,Natural Acetylation,3
+Caprolactam,8,Bio-based Amines,3
+Terephthalic Acid,8,Bio-based Acids,3
+Adipic Acid,8,Bio-based Diacids,3
+Methyl Methacrylate,8,Natural Acrylates,3
+Butadiene,8,Bio-based Dienes,3
+Acrylonitrile Butadiene Styrene,8,Natural Fiber Composites,3
+Polybutylene Terephthalate,8,Bio-based Polyesters,3
+Polyoxymethylene,8,Natural Acetals,3
+Polyphenylene Sulfide,9,Bio-based Sulfides,4
+Polyetheretherketone,9,High-performance Natural Fibers,4
+Polyetherimide,9,Bio-based Polyimides,4
+Polysulfone,9,Natural Sulfone Polymers,4
+Polyethersulfone,9,Bio-based Sulfones,4
+Liquid Crystal Polymer,9,Natural Liquid Crystals,4
+Fluoropolymers,10,Silicon-based Polymers,4
+Chlorinated Polyethylene,9,Natural Elastomers,3
+Chlorosulfonated Polyethylene,9,Bio-based Elastomers,3
+Ethylene Vinyl Alcohol,8,Natural Barrier Materials,3
+Styrene Acrylonitrile,8,Natural Copolymers,3
+Acrylonitrile Styrene Acrylate,8,Bio-based Copolymers,3
+Polybutylene,8,Bio-based Polyolefins,3
+Polyisobutylene,8,Natural Rubber Alternatives,3
+Polypropylene Carbonate,8,CO2-based Polymers,3
+Cellulose Acetate,7,Natural Cellulose,2
+Cellulose Acetate Butyrate,7,Modified Natural Cellulose,2
+Cellulose Propionate,7,Bio-based Cellulose,2
+Ethyl Cellulose,7,Plant-based Cellulose,2
+Hydroxypropyl Cellulose,7,Modified Plant Cellulose,2
+Methyl Cellulose,7,Natural Thickeners,2
+Nitrocellulose,8,Natural Film Formers,3
+Carboxymethyl Cellulose,7,Natural Modifiers,2
+Regenerated Cellulose,7,Natural Fibers,2
+Viscose Rayon,8,Lyocell,3

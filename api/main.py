@@ -16,36 +16,30 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Load model and encoders
-model_path = os.path.join(os.getcwd(), 'models', 'recommendation_model.joblib')
+# Load models and encoders
+substitute_model_path = os.path.join(os.getcwd(), 'models', 'substitute_model.joblib')
+eisc_model_path = os.path.join(os.getcwd(), 'models', 'eisc_model.joblib')
 material_encoder_path = os.path.join(os.getcwd(), 'models', 'tfidf_vectorizer.joblib')
 substitute_encoder_path = os.path.join(os.getcwd(), 'models', 'substitute_encoder.joblib')
+
 try:
-    model = joblib.load(model_path)
+    substitute_model = joblib.load(substitute_model_path)
+    eisc_model = joblib.load(eisc_model_path)
     material_encoder = joblib.load(material_encoder_path)
     substitute_encoder = joblib.load(substitute_encoder_path)
-    print("Model and encoders loaded successfully.")
+    print("Models and encoders loaded successfully.")
 except FileNotFoundError:
-    model = material_encoder = substitute_encoder = None
-    print("Model or encoders not found.")
+    substitute_model = eisc_model = material_encoder = substitute_encoder = None
+    print("Models or encoders not found.")
 
 class MaterialRequest(BaseModel):
     material: str
-    eis_score: Optional[float] = None
 
 import numpy as np
-import pandas as pd
-from sklearn.ensemble import RandomForestClassifier
 
-# Default EIS score to use if none is provided
-DEFAULT_EIS_SCORE = 0.5
-
-def recommend_substitute(material: str, eis_score: Optional[float] = None):
-    if model is None or material_encoder is None or substitute_encoder is None:
-        raise HTTPException(status_code=500, detail="Model or encoders are not available.")
-
-    # Use the provided eis_score or default if None
-    eis_score = eis_score if eis_score is not None else DEFAULT_EIS_SCORE
+def recommend_substitute(material: str):
+    if substitute_model is None or eisc_model is None or material_encoder is None or substitute_encoder is None:
+        raise HTTPException(status_code=500, detail="Models or encoders are not available.")
 
     # Preprocess the input material using the material encoder
     try:
@@ -54,27 +48,27 @@ def recommend_substitute(material: str, eis_score: Optional[float] = None):
         raise HTTPException(status_code=404, detail="Material not recognized. Unable to recommend a substitute.")
     
     # Ensure material_encoded is a dense array (if it's sparse)
-    if isinstance(material_encoded, np.ndarray):
-        material_encoded_dense = material_encoded
-    else:
-        material_encoded_dense = material_encoded.toarray()
+    material_encoded_dense = material_encoded.toarray() if not isinstance(material_encoded, np.ndarray) else material_encoded
 
-    # Prepare the features for prediction
-    features = np.hstack([material_encoded_dense, np.array([[eis_score]])])
+    # Predict EISc score for the original material
+    eisc_original = eisc_model.predict(material_encoded_dense)[0]
 
-    # Convert to float if needed
-    features = features.astype(float)
+    # Prepare features for substitute prediction
+    substitute_features = np.hstack([material_encoded_dense, np.array([[eisc_original]])])
 
-    # Make prediction
-    substitute_encoded = model.predict(features)[0]
-    
-    # Convert the predicted substitute back to its original form using the substitute encoder
+    # Predict the substitute
+    substitute_encoded = substitute_model.predict(substitute_features)[0]
     substitute = substitute_encoder.inverse_transform([substitute_encoded])[0]
+
+    # Predict EISc score for the recommended substitute
+    substitute_encoded_dense = material_encoder.transform([substitute.lower().strip()]).toarray()
+    eisc_substitute = eisc_model.predict(substitute_encoded_dense)[0]
 
     return {
         'Material': material,
-        'EISc (original)': eis_score,
-        'Recommended Substitute': substitute
+        'EISc (original)': eisc_original,
+        'Recommended Substitute': substitute,
+        'EISc (substitute)': eisc_substitute
     }
 
 @app.get("/recommend")
@@ -86,5 +80,5 @@ def recommend(material: Optional[str] = None):
 
 @app.post("/recommend")
 def recommend_post(request: MaterialRequest):
-    result = recommend_substitute(request.material, request.eis_score)
+    result = recommend_substitute(request.material)
     return result
